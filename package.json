@@ -1,0 +1,21 @@
+{
+  "name": "app-peso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package-mac": "electron-packager . peso --platform=darwin --arch=x64 --out=release-builds",
+    "package-win": "electron-packager . peso --platform=win32 --arch=x64 --out=release-builds --overwrite",
+    "create-installer-win": "electron-winstaller --output-directory installers --exe peso.exe"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^32.1.2",
+    "electron-packager": "^17.1.2",
+    "electron-winstaller": "^5.4.0"
+  }
+}
